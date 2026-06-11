@@ -1,0 +1,57 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d0b1e"/>
+      <stop offset="55%" stop-color="#150f2e"/>
+      <stop offset="100%" stop-color="#1d1240"/>
+    </linearGradient>
+    <linearGradient id="ilFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fc72ff" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#fc72ff" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="curveStroke" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fc72ff"/>
+      <stop offset="50%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#fc72ff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <line x1="0" y1="180" x2="1280" y2="180"/>
+    <line x1="0" y1="360" x2="1280" y2="360"/>
+    <line x1="0" y1="540" x2="1280" y2="540"/>
+    <line x1="320" y1="0" x2="320" y2="720"/>
+    <line x1="640" y1="0" x2="640" y2="720"/>
+    <line x1="960" y1="0" x2="960" y2="720"/>
+  </g>
+
+  <text x="84" y="92" font-family="Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="600" fill="#fc72ff" letter-spacing="3">THE PROBLEM</text>
+  <text x="84" y="156" font-family="Helvetica Neue, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">IL is worst when depth is needed most</text>
+
+  <!-- scenario chips -->
+  <g font-family="Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="600">
+    <rect x="84" y="228" width="190" height="44" rx="22" fill="#fc72ff" fill-opacity="0.10" stroke="#fc72ff" stroke-opacity="0.5" stroke-width="1.5"/>
+    <text x="179" y="256" fill="#fc72ff" text-anchor="middle">Token launch</text>
+    <rect x="294" y="228" width="150" height="44" rx="22" fill="#fc72ff" fill-opacity="0.10" stroke="#fc72ff" stroke-opacity="0.5" stroke-width="1.5"/>
+    <text x="369" y="256" fill="#fc72ff" text-anchor="middle">Depeg</text>
+    <rect x="464" y="228" width="190" height="44" rx="22" fill="#fc72ff" fill-opacity="0.10" stroke="#fc72ff" stroke-opacity="0.5" stroke-width="1.5"/>
+    <text x="559" y="256" fill="#fc72ff" text-anchor="middle">Post-exploit</text>
+    <rect x="674" y="228" width="190" height="44" rx="22" fill="#fc72ff" fill-opacity="0.10" stroke="#fc72ff" stroke-opacity="0.5" stroke-width="1.5"/>
+    <text x="769" y="256" fill="#fc72ff" text-anchor="middle">Token unlock</text>
+  </g>
+
+  <!-- three facts -->
+  <g font-family="Helvetica Neue, Arial, sans-serif" font-size="29" fill="#e8e6f2">
+    <text x="84" y="360">·&#160; Volatility is at its peak, so expected IL is at its peak</text>
+    <text x="84" y="430">·&#160; Fee revenue is at its thinnest, nothing offsets the IL</text>
+    <text x="84" y="500">·&#160; So rational LPs walk away, just when every unit of depth counts double</text>
+  </g>
+
+  <!-- punchline -->
+  <rect x="84" y="576" width="846" height="58" rx="9" fill="#a78bfa" fill-opacity="0.08" stroke="#a78bfa" stroke-opacity="0.5" stroke-width="1.5"/>
+  <text x="112" y="613" font-family="Helvetica Neue, Arial, sans-serif" font-size="25" font-weight="600" fill="#d8c7ff">Staying in the pool is irrational. Someone has to pay LPs to stay.</text>
+
+  <text x="84" y="688" font-family="Helvetica Neue, Arial, sans-serif" font-size="15" fill="#5e5880">SamanaHook · Uniswap v4</text>
+  <text x="1196" y="688" font-family="Helvetica Neue, Arial, sans-serif" font-size="15" fill="#5e5880" text-anchor="end">2 / 7</text>
+</svg>

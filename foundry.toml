@@ -1,0 +1,24 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+# Silence solc warnings from dependencies (e.g. deprecated memory-safe-assembly comments in forge-std)
+ignored_warnings_from = ["lib"]
+
+# Default RPC for scripts so --rpc-url can be omitted; resolves from the RPC_URL env var
+eth_rpc_url = "sepolia"
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+
+[rpc_endpoints]
+sepolia = "${RPC_URL}"
+
+[profile.ci]
+no_match_coverage = "script/"
+
+[profile.default.lint]
+# `IL` (impermanent loss) and `Bps` are intentional domain acronyms; keep `_computeILBps` readable.
+exclude_lints = ["mixed-case-function"]
+# Test fixtures cast small constant liquidity values to int256/uint256; provably safe, not worth pragmas.
+# unsafe-typecast stays active for src/ so real production truncations are still caught.
+ignore = ["test/**/*.sol"]

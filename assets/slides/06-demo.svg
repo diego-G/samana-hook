@@ -1,0 +1,60 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d0b1e"/>
+      <stop offset="55%" stop-color="#150f2e"/>
+      <stop offset="100%" stop-color="#1d1240"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <line x1="0" y1="180" x2="1280" y2="180"/>
+    <line x1="0" y1="360" x2="1280" y2="360"/>
+    <line x1="0" y1="540" x2="1280" y2="540"/>
+    <line x1="320" y1="0" x2="320" y2="720"/>
+    <line x1="640" y1="0" x2="640" y2="720"/>
+    <line x1="960" y1="0" x2="960" y2="720"/>
+  </g>
+
+  <text x="84" y="92" font-family="Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="600" fill="#fc72ff" letter-spacing="3">LIVE DEMO · SEPOLIA</text>
+  <text x="84" y="156" font-family="Helvetica Neue, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">Real transactions, three acts</text>
+
+  <g font-family="Helvetica Neue, Arial, sans-serif">
+    <!-- act 1 -->
+    <rect x="84" y="206" width="356" height="330" rx="14" fill="#7dd3fc" fill-opacity="0.05" stroke="#7dd3fc" stroke-opacity="0.35" stroke-width="1.5"/>
+    <text x="112" y="258" font-size="18" font-weight="600" fill="#7dd3fc" letter-spacing="2">ACT 1</text>
+    <text x="112" y="296" font-size="25" font-weight="700" fill="#ffffff">Trust the lockup</text>
+    <text x="112" y="344" font-size="19" fill="#b8b2d4">· Create 15 USDC bounty</text>
+    <text x="112" y="378" font-size="19" fill="#b8b2d4">· LP qualifies, 5 USDC reserved</text>
+    <text x="112" y="412" font-size="19" fill="#b8b2d4">· Early claim reverts on-chain:</text>
+    <text x="128" y="442" font-size="17" font-family="Menlo, Courier New, monospace" fill="#fc72ff">LiquidityStillLocked</text>
+    <text x="112" y="478" font-size="19" fill="#b8b2d4">· Claim succeeds after lockup</text>
+
+    <!-- act 2 -->
+    <rect x="462" y="206" width="356" height="330" rx="14" fill="#7dd3fc" fill-opacity="0.05" stroke="#7dd3fc" stroke-opacity="0.35" stroke-width="1.5"/>
+    <text x="490" y="258" font-size="18" font-weight="600" fill="#7dd3fc" letter-spacing="2">ACT 2</text>
+    <text x="490" y="296" font-size="25" font-weight="700" fill="#ffffff">Budget rules</text>
+    <text x="490" y="344" font-size="19" fill="#b8b2d4">· Second LP drains the budget</text>
+    <text x="490" y="378" font-size="19" fill="#b8b2d4">· Third LP qualifies but gets</text>
+    <text x="506" y="408" font-size="19" fill="#b8b2d4">nothing: exhaustion is silent</text>
+    <text x="490" y="444" font-size="19" fill="#b8b2d4">· Deactivate refunds the</text>
+    <text x="506" y="474" font-size="19" fill="#b8b2d4">uncommitted 3.5 USDC</text>
+
+    <!-- act 3 -->
+    <rect x="840" y="206" width="356" height="330" rx="14" fill="#fc72ff" fill-opacity="0.07" stroke="#fc72ff" stroke-opacity="0.45" stroke-width="1.5"/>
+    <text x="868" y="258" font-size="18" font-weight="600" fill="#fc72ff" letter-spacing="2">ACT 3</text>
+    <text x="868" y="296" font-size="25" font-weight="700" fill="#ffffff">IL insurance pays</text>
+    <text x="868" y="344" font-size="19" fill="#b8b2d4">· New bounty, 100% coverage</text>
+    <text x="868" y="378" font-size="19" fill="#b8b2d4">· Full-range LP qualifies</text>
+    <text x="868" y="412" font-size="19" fill="#b8b2d4">· Big swap moves the price,</text>
+    <text x="884" y="442" font-size="19" fill="#b8b2d4">creating real IL</text>
+    <text x="868" y="478" font-size="19" fill="#b8b2d4">· Claim pays base + IL payout,</text>
+    <text x="884" y="508" font-size="19" fill="#b8b2d4">more than the 5 USDC base</text>
+  </g>
+
+  <text x="84" y="600" font-family="Menlo, Courier New, monospace" font-size="17" fill="#8a83ad">SamanaHook @ <a href="https://sepolia.etherscan.io/address/0x597cb94f36f8ECA3a450c7f13C237e4D667E9680" target="_blank"><tspan fill="#7dd3fc">0x597cb94f36f8ECA3a450c7f13C237e4D667E9680</tspan></a> · Sepolia</text>
+
+  <text x="84" y="688" font-family="Helvetica Neue, Arial, sans-serif" font-size="15" fill="#5e5880">SamanaHook · Uniswap v4</text>
+  <text x="1196" y="688" font-family="Helvetica Neue, Arial, sans-serif" font-size="15" fill="#5e5880" text-anchor="end">6 / 7</text>
+</svg>

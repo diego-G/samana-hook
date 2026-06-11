@@ -1,0 +1,54 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d0b1e"/>
+      <stop offset="55%" stop-color="#150f2e"/>
+      <stop offset="100%" stop-color="#1d1240"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <line x1="0" y1="180" x2="1280" y2="180"/>
+    <line x1="0" y1="360" x2="1280" y2="360"/>
+    <line x1="0" y1="540" x2="1280" y2="540"/>
+    <line x1="320" y1="0" x2="320" y2="720"/>
+    <line x1="640" y1="0" x2="640" y2="720"/>
+    <line x1="960" y1="0" x2="960" y2="720"/>
+  </g>
+
+  <text x="84" y="92" font-family="Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="600" fill="#fc72ff" letter-spacing="3">USE CASES &#38; PERSONAS</text>
+  <text x="84" y="156" font-family="Helvetica Neue, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">Whoever needs the depth funds the bounty</text>
+
+  <!-- three cards: persona + knobs -->
+  <g font-family="Helvetica Neue, Arial, sans-serif">
+    <!-- card 1: cold start -->
+    <rect x="84" y="240" width="356" height="264" rx="14" fill="#fc72ff" fill-opacity="0.05" stroke="#fc72ff" stroke-opacity="0.35" stroke-width="1.5"/>
+    <text x="112" y="296" font-size="26" font-weight="700" fill="#ffffff">New pool cold-start</text>
+    <text x="112" y="336" font-size="18" font-weight="600" fill="#fc72ff" letter-spacing="1">PROTOCOL / DAO</text>
+    <text x="112" y="392" font-size="20" fill="#e8e6f2">Lockup: 7-30 days</text>
+    <text x="112" y="426" font-size="20" fill="#e8e6f2">Coverage: 50-100%</text>
+    <text x="112" y="460" font-size="20" fill="#e8e6f2">Budget: 2× rewards</text>
+
+    <!-- card 2: depeg -->
+    <rect x="462" y="240" width="356" height="264" rx="14" fill="#fc72ff" fill-opacity="0.05" stroke="#fc72ff" stroke-opacity="0.35" stroke-width="1.5"/>
+    <text x="490" y="296" font-size="26" font-weight="700" fill="#ffffff">Depeg defence</text>
+    <text x="490" y="336" font-size="18" font-weight="600" fill="#fc72ff" letter-spacing="1">ISSUER TREASURY</text>
+    <text x="490" y="392" font-size="20" fill="#e8e6f2">Lockup: 3-14 days</text>
+    <text x="490" y="426" font-size="20" fill="#e8e6f2">Coverage: 100%</text>
+    <text x="490" y="460" font-size="20" fill="#e8e6f2">Budget: 3× rewards</text>
+
+    <!-- card 3: unlock -->
+    <rect x="840" y="240" width="356" height="264" rx="14" fill="#fc72ff" fill-opacity="0.05" stroke="#fc72ff" stroke-opacity="0.35" stroke-width="1.5"/>
+    <text x="868" y="296" font-size="26" font-weight="700" fill="#ffffff">Token unlock</text>
+    <text x="868" y="336" font-size="18" font-weight="600" fill="#fc72ff" letter-spacing="1">FOUNDATION / WHALE</text>
+    <text x="868" y="392" font-size="20" fill="#e8e6f2">Lockup: 1-7 days</text>
+    <text x="868" y="426" font-size="20" fill="#e8e6f2">Coverage: 0-50%</text>
+    <text x="868" y="460" font-size="20" fill="#e8e6f2">Budget: 1.5× rewards</text>
+  </g>
+
+  <text x="640" y="580" font-family="Helvetica Neue, Arial, sans-serif" font-size="22" fill="#8a83ad" text-anchor="middle">Same hook, same formula - only the knobs change</text>
+
+  <text x="84" y="688" font-family="Helvetica Neue, Arial, sans-serif" font-size="15" fill="#5e5880">SamanaHook · Uniswap v4</text>
+  <text x="1196" y="688" font-family="Helvetica Neue, Arial, sans-serif" font-size="15" fill="#5e5880" text-anchor="end">5 / 7</text>
+</svg>

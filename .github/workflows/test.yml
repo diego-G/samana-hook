@@ -1,0 +1,51 @@
+name: CI
+
+permissions: {}
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+env:
+  FOUNDRY_PROFILE: ci
+  # foundry.toml interpolates ${RPC_URL} in [rpc_endpoints]; newer forge resolves it
+  # eagerly and errors when unset. Provided as a repo secret; fork tests gate on
+  # SEPOLIA_RPC_URL and skip in CI, so the endpoint is not contacted.
+  RPC_URL: ${{ secrets.RPC_URL }}
+
+jobs:
+  check:
+    name: Foundry project
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+          submodules: recursive
+
+      - name: Install Foundry
+        uses: foundry-rs/foundry-toolchain@v1
+
+      - name: Show Forge version
+        run: forge --version
+
+      - name: Run Forge fmt
+        run: forge fmt --check
+
+      - name: Run Forge build
+        run: forge build --skip test
+
+      - name: Run Forge tests
+        run: forge test -vvv
+
+      - name: Run Forge coverage
+        run: forge coverage --report lcov
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          files: ./lcov.info
+          token: ${{ secrets.CODECOV_TOKEN }}

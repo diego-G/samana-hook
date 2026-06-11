@@ -1,0 +1,68 @@
+<svg width="1080" height="1080" viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d0b1e"/>
+      <stop offset="55%" stop-color="#150f2e"/>
+      <stop offset="100%" stop-color="#1d1240"/>
+    </linearGradient>
+    <linearGradient id="ilFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fc72ff" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#fc72ff" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="curveStroke" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fc72ff"/>
+      <stop offset="50%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#fc72ff"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#fc72ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#fc72ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="640" height="640" fill="url(#bg)"/>
+  <circle cx="320" cy="310" r="320" fill="url(#glow)"/>
+
+  <!-- subtle grid -->
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <line x1="0" y1="124" x2="640" y2="124"/>
+    <line x1="0" y1="224" x2="640" y2="224"/>
+    <line x1="0" y1="324" x2="640" y2="324"/>
+    <line x1="0" y1="424" x2="640" y2="424"/>
+    <line x1="100" y1="0" x2="100" y2="640"/>
+    <line x1="320" y1="0" x2="320" y2="640"/>
+    <line x1="540" y1="0" x2="540" y2="640"/>
+  </g>
+
+  <!-- chart content shifted from thumbnail.svg: x-640, y-36 -->
+  <g transform="translate(-640,-36)">
+    <!-- shaded insured IL region between curve and baseline -->
+    <path d="M740,160 L767.5,221 L795,278 L822.5,330 L850,374 L877.5,411 L905,438 L932.5,454 L960,460 L987.5,454 L1015,438 L1042.5,411 L1070,374 L1097.5,330 L1125,278 L1152.5,221 L1180,160 L1180,460 L740,460 Z"
+          fill="url(#ilFill)"/>
+
+    <!-- IL curve -->
+    <path d="M740,160 L767.5,221 L795,278 L822.5,330 L850,374 L877.5,411 L905,438 L932.5,454 L960,460 L987.5,454 L1015,438 L1042.5,411 L1070,374 L1097.5,330 L1125,278 L1152.5,221 L1180,160"
+          fill="none" stroke="url(#curveStroke)" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+
+    <!-- baseline: zero IL -->
+    <line x1="710" y1="460" x2="1210" y2="460" stroke="#7dd3fc" stroke-width="2" stroke-dasharray="7 7" stroke-opacity="0.7"/>
+    <text x="1210" y="484" font-family="Helvetica Neue, Arial, sans-serif" font-size="17" fill="#7dd3fc" fill-opacity="0.85" text-anchor="end">IL = 0</text>
+
+    <!-- axis labels -->
+    <text x="740" y="516" font-family="Helvetica Neue, Arial, sans-serif" font-size="17" fill="#9b94b8" text-anchor="middle">0.25×</text>
+    <text x="960" y="516" font-family="Helvetica Neue, Arial, sans-serif" font-size="17" fill="#9b94b8" text-anchor="middle">1×</text>
+    <text x="1180" y="516" font-family="Helvetica Neue, Arial, sans-serif" font-size="17" fill="#9b94b8" text-anchor="middle">4×</text>
+    <text x="960" y="552" font-family="Helvetica Neue, Arial, sans-serif" font-size="17" fill="#6e6890" text-anchor="middle" letter-spacing="2">PRICE RATIO</text>
+
+    <!-- insured label -->
+    <text x="960" y="240" font-family="Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="600" fill="#fc72ff" text-anchor="middle" letter-spacing="1">IL INSURED</text>
+
+    <!-- shield over the valley -->
+    <g transform="translate(960,330)">
+      <path d="M0,-36 C14,-26 30,-22 42,-22 C42,8 28,34 0,46 C-28,34 -42,8 -42,-22 C-30,-22 -14,-26 0,-36 Z"
+            fill="#150f2e" stroke="#fc72ff" stroke-width="3.5"/>
+      <path d="M-16,2 L-5,14 L18,-12" fill="none" stroke="#fc72ff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>
